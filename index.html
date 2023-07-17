@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="cmsmagazine" content="ca39d125c1197307aff2bcc10f36b889" />
+    <meta name="author" content="Cтудия ЯР" />
+    <link rel="stylesheet" href="css/magnific-popup.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/style.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/style-media.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/fonts.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="css/normalize.css" media="all" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <noscript>
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-media.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+    </noscript>
+    <title>Вместе Инвест</title>
+</head>
+
+<body>
+    <svg class="bem-symbols">
+        <defs>
+            <symbol id="instagram" viewBox="0 0 43 43">
+                <path
+                    d="M25.4815 21.5C25.4815 23.699 23.699 25.4815 21.5 25.4815C19.3011 25.4815 17.5186 23.699 17.5186 21.5C17.5186 19.301 19.3011 17.5185 21.5 17.5185C23.699 17.5185 25.4815 19.301 25.4815 21.5Z"
+                    fill="#1F40E7" />
+                <path
+                    d="M31.3436 14.0529C31.1412 13.5046 30.8184 13.0084 30.399 12.601C29.9917 12.1816 29.4957 11.8588 28.9471 11.6565C28.5022 11.4837 27.8338 11.278 26.6027 11.222C25.271 11.1612 24.8717 11.1481 21.5002 11.1481C18.1284 11.1481 17.7291 11.1609 16.3977 11.2216C15.1666 11.278 14.4979 11.4837 14.0533 11.6565C13.5047 11.8588 13.0084 12.1816 12.6014 12.601C12.182 13.0084 11.8592 13.5043 11.6565 14.0529C11.4837 14.4978 11.278 15.1666 11.222 16.3976C11.1613 17.7291 11.1482 18.1283 11.1482 21.5002C11.1482 24.8717 11.1613 25.2709 11.222 26.6027C11.278 27.8338 11.4837 28.5022 11.6565 28.9471C11.8592 29.4957 12.1817 29.9916 12.6011 30.399C13.0084 30.8184 13.5043 31.1412 14.0529 31.3435C14.4979 31.5166 15.1666 31.7223 16.3977 31.7784C17.7291 31.8391 18.1281 31.8519 21.4999 31.8519C24.872 31.8519 25.2713 31.8391 26.6024 31.7784C27.8335 31.7223 28.5022 31.5166 28.9471 31.3435C30.0484 30.9187 30.9188 30.0483 31.3436 28.9471C31.5164 28.5022 31.722 27.8338 31.7784 26.6027C31.8391 25.2709 31.8519 24.8717 31.8519 21.5002C31.8519 18.1283 31.8391 17.7291 31.7784 16.3976C31.7224 15.1666 31.5167 14.4978 31.3436 14.0529ZM21.5002 27.9838C17.919 27.9838 15.0159 25.081 15.0159 21.4998C15.0159 17.9186 17.919 15.0159 21.5002 15.0159C25.0811 15.0159 27.9841 17.9186 27.9841 21.4998C27.9841 25.081 25.0811 27.9838 21.5002 27.9838ZM28.2405 16.2748C27.4037 16.2748 26.7252 15.5964 26.7252 14.7595C26.7252 13.9227 27.4037 13.2443 28.2405 13.2443C29.0773 13.2443 29.7558 13.9227 29.7558 14.7595C29.7555 15.5964 29.0773 16.2748 28.2405 16.2748Z"
+                    fill="#1F40E7" />
+                <path
+                    d="M21.5 0C9.62769 0 0 9.62769 0 21.5C0 33.3723 9.62769 43 21.5 43C33.3723 43 43 33.3723 43 21.5C43 9.62769 33.3723 0 21.5 0ZM33.7712 26.5899C33.7115 27.9041 33.5025 28.8014 33.1974 29.5868C32.5561 31.2451 31.2451 32.5561 29.5868 33.1974C28.8017 33.5025 27.9041 33.7112 26.5902 33.7712C25.2737 33.8313 24.8531 33.8457 21.5003 33.8457C18.1472 33.8457 17.7269 33.8313 16.4101 33.7712C15.0962 33.7112 14.1986 33.5025 13.4136 33.1974C12.5895 32.8874 11.8434 32.4016 11.2267 31.7733C10.5988 31.1569 10.1129 30.4105 9.80288 29.5868C9.49778 28.8017 9.2888 27.9041 9.2291 26.5902C9.1684 25.2734 9.1543 24.8528 9.1543 21.5C9.1543 18.1472 9.1684 17.7266 9.22877 16.4101C9.28848 15.0959 9.49712 14.1986 9.80222 13.4132C10.1122 12.5895 10.5984 11.8431 11.2267 11.2267C11.8431 10.5984 12.5895 10.1126 13.4132 9.80255C14.1986 9.49745 15.0959 9.2888 16.4101 9.22877C17.7266 9.16873 18.1472 9.1543 21.5 9.1543C24.8528 9.1543 25.2734 9.16873 26.5899 9.2291C27.9041 9.2888 28.8014 9.49745 29.5868 9.80222C30.4105 10.1122 31.1569 10.5984 31.7737 11.2267C32.4016 11.8434 32.8878 12.5895 33.1974 13.4132C33.5029 14.1986 33.7115 15.0959 33.7716 16.4101C33.8316 17.7266 33.8457 18.1472 33.8457 21.5C33.8457 24.8528 33.8316 25.2734 33.7712 26.5899Z"
+                    fill="#1F40E7" />
+            </symbol>
+            <symbol id="vkontakte" viewBox="0 0 43 43">
+                <path
+                    d="M21.5 0C9.62628 0 0 9.62584 0 21.5C0 33.3742 9.62628 43 21.5 43C33.3737 43 43 33.3742 43 21.5C43 9.62584 33.3737 0 21.5 0ZM32.4059 23.8253C33.408 24.8041 34.4682 25.7252 35.3678 26.8052C35.7663 27.2829 36.142 27.7769 36.4279 28.3325C36.8362 29.1247 36.4675 29.9935 35.7584 30.0406L31.3537 30.0397C30.2161 30.1339 29.3108 29.6751 28.5476 28.8973C27.9383 28.2775 27.3731 27.6155 26.7862 26.9745C26.5465 26.7115 26.294 26.4638 25.9931 26.2689C25.3927 25.8783 24.8709 25.998 24.5269 26.6252C24.1763 27.2635 24.0963 27.9709 24.0628 28.6813C24.0149 29.7199 23.7017 29.9913 22.6596 30.0402C20.4328 30.1444 18.32 29.8066 16.3563 28.684C14.624 27.6938 13.2832 26.2962 12.1148 24.7139C9.83963 21.6293 8.0972 18.2439 6.5316 14.7612C6.17924 13.9769 6.43702 13.5572 7.3023 13.5409C8.73989 13.5132 10.1775 13.5167 11.6151 13.5396C12.2001 13.5488 12.5872 13.8836 12.812 14.4357C13.5889 16.347 14.5413 18.1656 15.7347 19.8521C16.0527 20.3013 16.3774 20.7491 16.8397 21.0663C17.35 21.4164 17.7389 21.3007 17.9795 20.7311C18.1335 20.369 18.1999 19.9819 18.2333 19.5939C18.3477 18.265 18.3613 16.9365 18.1634 15.6128C18.0402 14.7845 17.5744 14.2496 16.7487 14.093C16.3281 14.0134 16.3897 13.8577 16.5943 13.6175C16.9493 13.2022 17.2818 12.9453 17.9465 12.9453L22.9231 12.9444C23.7074 13.0984 23.8834 13.4503 23.9898 14.2404L23.9942 19.7708C23.985 20.0765 24.1477 20.9827 24.6967 21.1828C25.1366 21.328 25.427 20.9752 25.69 20.6967C26.8835 19.4303 27.7338 17.9355 28.4953 16.3884C28.8313 15.7061 29.1212 15.0001 29.4028 14.2927C29.6122 13.7697 29.9377 13.5123 30.528 13.5211L35.3203 13.5269C35.4615 13.5269 35.6049 13.5282 35.7448 13.5524C36.5524 13.6905 36.7737 14.038 36.5238 14.8259C36.1306 16.0637 35.3665 17.0949 34.6195 18.1286C33.8189 19.2354 32.9651 20.3035 32.1724 21.4151C31.4439 22.4313 31.5015 22.9429 32.4059 23.8253Z"
+                    fill="#1F40E7" />
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 43 43">
+                <path
+                    d="M21.5 0C9.64495 0 0 9.64495 0 21.5C0 33.3542 9.64495 43 21.5 43C33.3542 43 43 33.3542 43 21.5C43 9.64495 33.3559 0 21.5 0ZM26.8469 22.2569H23.349C23.349 27.8454 23.349 34.7242 23.349 34.7242H18.1658C18.1658 34.7242 18.1658 27.9121 18.1658 22.2569H15.7019V17.8506H18.1658V15.0005C18.1658 12.9592 19.1357 9.76966 23.3966 9.76966L27.2374 9.78438V14.0617C27.2374 14.0617 24.9035 14.0617 24.4497 14.0617C23.9959 14.0617 23.3507 14.2886 23.3507 15.262V17.8514H27.2998L26.8469 22.2569Z"
+                    fill="#1F40E7" />
+            </symbol>
+            <symbol id="rub" viewBox="0 0 464 511">
+                <path
+                    d="M11.786 428.963H92.944V498.535C92.944 501.92 94.027 504.691 96.206 506.857C98.379 509.037 101.157 510.127 104.541 510.127H165.043C168.183 510.127 170.9 509.037 173.195 506.857C175.49 504.691 176.634 501.919 176.634 498.535V428.963H359.598C362.975 428.963 365.754 427.887 367.932 425.707C370.112 423.529 371.194 420.756 371.194 417.371V370.994C371.194 367.629 370.112 364.838 367.932 362.672C365.76 360.492 362.975 359.402 359.598 359.402H176.628V316.648H299.812C348.117 316.648 387.542 301.929 418.105 272.449C448.656 243 463.939 204.959 463.939 158.324C463.939 111.72 448.656 73.678 418.105 44.199C387.548 14.749 348.116 0 299.812 0H104.535C101.15 0 98.378 1.089 96.2 3.256C94.027 5.435 92.938 8.225 92.938 11.591V239.487H11.786C8.40197 239.487 5.62897 240.632 3.45097 242.926C1.27897 245.221 0.188965 247.938 0.188965 251.077V305.055C0.188965 308.44 1.27197 311.213 3.45097 313.391C5.62997 315.571 8.39596 316.647 11.786 316.647H92.944V359.401H11.786C8.40197 359.401 5.62897 360.491 3.45097 362.671C1.27897 364.837 0.188965 367.622 0.188965 370.993V417.37C0.188965 420.755 1.27197 423.528 3.45097 425.706C5.62897 427.887 8.40096 428.963 11.786 428.963ZM176.628 77.179H292.566C318.166 77.179 338.814 84.664 354.519 99.639C370.216 114.615 378.068 134.186 378.068 158.33C378.068 182.486 370.216 202.063 354.519 217.021C338.814 232.009 318.165 239.494 292.566 239.494H176.628V77.179Z"
+                    fill="#1F40E7" />
+            </symbol>
+            <symbol id="burger" viewBox="0 0 20 20">
+                <path
+                    d="M20.0001 1C20.0001 0.400001 19.6667 0 19.1667 0H0.833336C0.333334 0 0 0.400001 0 1V3.00001C0 3.60001 0.333334 4.00001 0.833336 4.00001H19.1667C19.6667 4.00001 20.0001 3.60001 20.0001 3.00001V1Z"
+                    fill="#1F40E7" />
+                <path
+                    d="M20.0001 9C20.0001 8.4 19.6667 8 19.1667 8H0.833336C0.333334 8 0 8.4 0 9V11C0 11.6 0.333334 12 0.833336 12H19.1667C19.6667 12 20.0001 11.6 20.0001 11V9Z"
+                    fill="#1F40E7" />
+                <path
+                    d="M20.0001 17C20.0001 16.4 19.6667 16 19.1667 16H0.833336C0.333334 16 0 16.4 0 17V19C0 19.6 0.333334 20 0.833336 20H19.1667C19.6667 20 20.0001 19.6 20.0001 19V17Z"
+                    fill="#1F40E7" />
+            </symbol>
+            <symbol id="close" viewBox="0 0 24 24">
+                <path style="fill:#1F40E7;"
+                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+            </symbol>
+        </defs>
+    </svg>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header__wrap">
+                        <div class="header__logo">
+                            <a href="#"><img src="img/vmesteinvest-logo.png" alt="Вместе Инвест" /></a>
+                        </div>
+                        <nav class="m-menu">
+                            <ul class="m-menu__wrap">
+                                <li class="m-menu__item"><a href="#howitworks" class="scroll-to-section">Как это
+                                        работает</a></li>
+                                <li class="m-menu__item"><a href="#advantages" class="scroll-to-section">Наши
+                                        преимущества</a></li>
+                                <li class="m-menu__item"><a href="#calc" class="scroll-to-section">Рассчитать доход</a>
+                                </li>
+                                <li class="m-menu__item"><a href="#grey-back" class="scroll-to-section">Объекты
+                                        недвижимости</a></li>
+                                <li class="m-menu__item"><a href="#about" class="scroll-to-section">О нас</a></li>
+                                <li class="m-menu__item"><a href="#map" class="scroll-to-section">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__phone">
+                            <div class="mob-hidden">
+                                <div class="header__phone-link"><a href="tel:+71951505161">+7 (195) 150-51-61</a></div>
+                                <div class="header__phone-text"><span>Звонок по России бесплатный</span></div>
+                            </div>
+                            <a href="tel:+71951505161" class="mobile"><img src="img/telephone.svg" alt="" /></a>
+                        </div>
+                        <div class="navbar">
+                            <svg class="bem-symbol menu-burg" width="30" height="30">
+                                <use xlink:href="#burger"></use>
+                            </svg>
+                            <svg class="bem-symbol menu-close" width="30" height="30">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="first-screen-section">
+            <div class="container">
+                <div class="row">
+                    <div class="first-screen">
+                        <div class="first-screen__left">
+                            <div class="first-screen__title"><span>Коллективные инвестиции в коммерческую
+                                    недвижимость</span></div>
+                            <div class="first-screen__list">
+                                <ul>
+                                    <li><span class="bold">15 - 17%</span><br>средняя годовая доходность</li>
+                                    <li>от <span class="bold">300 000</span> руб.<br>сумма инвестиций</li>
+                                    <li><span class="bold">Гарантированное право</span><br>долевой собственности на
+                                        объект недвижимости</li>
+                                </ul>
+                                <a href="#howitworks" class="b-btn scroll-to-section">Узнать подробнее</a>
+                            </div>
+                        </div>
+                        <div class="first-screen__socials">
+                            <ul>
+                                <li>
+                                    <a href="#"><svg class="bem-symbol" width="38" height="38">
+                                            <use xlink:href="#instagram"></use>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#"><svg class="bem-symbol" width="38" height="38">
+                                            <use xlink:href="#vkontakte"></use>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#"><svg class="bem-symbol" width="38" height="38">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="content-block">
+                            <div class="content-block__title">Вместе Инвест - новый взгляд на доход с квадратных метров
+                            </div>
+                            <div class="content-block__container">
+                                <div class="content-block__container-item">
+                                    <div class="content-block__container-item-image">
+                                        <img src="img/goal.png" alt="" />
+                                    </div>
+                                    <div class="content-block__container-item-text">Наша цель - сделать инвестиции в
+                                        коммерческую недвижимость более <span class="semibold">доступным, простым и
+                                            удобным инструментом получения пассивного дохода</span></div>
+                                </div>
+                                <div class="content-block__container-item">
+                                    <div class="content-block__container-item-text">Для достижения этой цели мы
+                                        используем <span class="semibold">механизм коллективных инвестиций</span>,
+                                        поскольку верим в модель краудфандинга, которая предоставляет возможность <span
+                                            class="semibold">каждому стать совладельцем крупного объекта недвижимости и
+                                            зарабатывать на этом</span></div>
+                                    <div class="content-block__container-item-image">
+                                        <img src="img/group.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="howitworks">
+            <div class="container">
+                <div class="row">
+                    <div class="content-block">
+                        <div class="content-block__title">Как это работает</div>
+                        <div class="content-block__container">
+                            <div class="video-block">
+                                <div class="video-content">
+                                    <div class="youtube" data-src="https://www.youtube.com/embed/UQ1ddqA8wdw">
+                                        <div class="youtube__play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steps-block">
+                                <div class="steps-block-item">
+                                    <div class="steps-block-item__number">1</div>
+                                    <div class="steps-block-item__text">
+                                        <div class="steps-block-item__text__title">Выберите объект недвижимости</div>
+                                        <ul class="steps-block-item__list">
+                                            <li>Мы проводим полную юридическую, финансовую и техническую проверку, по
+                                                итогам которой формируем оценку стоимости объекта</li>
+                                            <li>В итоге, для Вашего рассмотрения предлагаются только высококачественные
+                                                объекты недвижимости</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="steps-block-item">
+                                    <div class="steps-block-item__number">2</div>
+                                    <div class="steps-block-item__text">
+                                        <div class="steps-block-item__text__title">Сделайте покупку паев и станьте
+                                            совладельцем объекта недвижимости</div>
+                                        <ul class="steps-block-item__list">
+                                            <li>Все что нужно - определить количество паев и заключить договор</li>
+                                            <li>Для приобретения Вами паев в объектах мы используем наиболее безопасную
+                                                и защищённую форму инвестирования - закрытый паевой инвестиционный фонд
+                                                недвижимости (ЗПИФ)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="steps-block-item">
+                                    <div class="steps-block-item__number">3</div>
+                                    <div class="steps-block-item__text">
+                                        <div class="steps-block-item__text__title">Получайте стабильный пассивный доход
+                                            без лишних хлопот и головной боли</div>
+                                        <ul class="steps-block-item__list">
+                                            <li>Ежемесячные выплаты дивидендов генерируются из арендных платежей, а
+                                                также прироста стоимости недвижимости</li>
+                                            <li>Эксплуатация объектов осуществляется профессиональной управляющей
+                                                компанией</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#modal_callback1" class="b-btn popup">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="grey-back">
+            <div class="container">
+                <div class="row">
+                    <div class="content-block">
+                        <div class="content-block__title">Наши объекты</div>
+                        <div class="content-block__description">Мы инвестируем в готовые объекты с долгосрочными
+                            договорами аренды в привлекательных локациях.<br> Наши арендаторы - федеральные продуктовые
+                            сети, отделения крупнейших банков, аптечные сети, сетевые рестораны быстрого питания,
+                            салоны сотовой связи</div>
+                        <div class="objects-slider">
+                            <div class="objects-slider-item">
+                                <div class="object-image">
+                                    <img src="img/object1.jpg" alt="" />
+                                </div>
+                                <div class="object-title">ТЦ Город</div>
+                                <div class="object-address">г. Егорьевск, ул. Советская 4</div>
+                                <div class="object-info">
+                                    <div class="object-info-item">Стоимость объекта: <span>340 000 000 руб.</span></div>
+                                    <div class="object-info-item">Цена за кв. метр: <span>102 382 руб.</span></div>
+                                    <div class="object-info-item">Срок окупаемости объекта: <span>7,6 лет</span></div>
+                                    <div class="object-info-item">Доходность: <span>14%</span></div>
+                                    <div class="object-info-item">Мин. инвестиции: <span>717 488 руб.</span></div>
+                                </div>
+                                <div class="object-invest-progress">
+                                    <div class="progress-bar" style="width:34%"></div>
+                                </div>
+                                <div class="object-invest-info">
+                                    <div class="object-invest-info-item">Инвестировано <span>164 165 руб.</span></div>
+                                    <div class="object-invest-info-item">Необходимая сумма <span>479 042 руб.</span>
+                                    </div>
+                                    <div class="object-invest-info-item">Прогресс <span>34%</span></div>
+                                </div>
+                            </div>
+                            <div class="objects-slider-item">
+                                <div class="object-image">
+                                    <img src="img/object2.jpg" alt="" />
+                                </div>
+                                <div class="object-title">Супермаркет Виктория</div>
+                                <div class="object-address">г. Долгопрудный, Ликачевское шоссе 6</div>
+                                <div class="object-info">
+                                    <div class="object-info-item">Стоимость объекта: <span>340 000 000 руб.</span></div>
+                                    <div class="object-info-item">Цена за кв. метр: <span>150 237 руб.</span></div>
+                                    <div class="object-info-item">Срок окупаемости объекта: <span>7,3 лет</span></div>
+                                    <div class="object-info-item">Доходность: <span>14,8%</span></div>
+                                    <div class="object-info-item">Мин. инвестиции: <span>300 000 руб.</span></div>
+                                </div>
+                                <div class="object-invest-progress">
+                                    <div class="progress-bar" style="width:20%"></div>
+                                </div>
+                                <div class="object-invest-info">
+                                    <div class="object-invest-info-item">Инвестировано <span>58 252 руб.</span></div>
+                                    <div class="object-invest-info-item">Необходимая сумма <span>204 807 руб.</span>
+                                    </div>
+                                    <div class="object-invest-info-item">Прогресс <span>20%</span></div>
+                                </div>
+                            </div>
+                            <div class="objects-slider-item">
+                                <div class="object-image">
+                                    <img src="img/object3.jpg" alt="" />
+                                </div>
+                                <div class="object-title">Супермаркет Пятерочка</div>
+                                <div class="object-address">г. Люберцы, Октябрьский пр-т 55</div>
+                                <div class="object-info">
+                                    <div class="object-info-item">Стоимость объекта: <span>160 000 000 руб.</span></div>
+                                    <div class="object-info-item">Цена за кв. метр: <span>247 488 руб.</span></div>
+                                    <div class="object-info-item">Срок окупаемости объекта: <span>7,8 лет</span></div>
+                                    <div class="object-info-item">Доходность: <span>33,4%</span></div>
+                                    <div class="object-info-item">Мин. инвестиции: <span>300 000 руб.</span></div>
+                                </div>
+                                <div class="object-invest-progress">
+                                    <div class="progress-bar" style="width:27%"></div>
+                                </div>
+                                <div class="object-invest-info">
+                                    <div class="object-invest-info-item">Инвестировано <span>203 605 руб.</span></div>
+                                    <div class="object-invest-info-item">Необходимая сумма <span>308 400 руб.</span>
+                                    </div>
+                                    <div class="object-invest-info-item">Прогресс <span>27%</span></div>
+                                </div>
+                            </div>
+                            <div class="objects-slider-item">
+                                <div class="object-image">
+                                    <img src="img/object3.jpg" alt="" />
+                                </div>
+                                <div class="object-title">Супермаркет Пятерочка</div>
+                                <div class="object-address">г. Люберцы, Октябрьский пр-т 55</div>
+                                <div class="object-info">
+                                    <div class="object-info-item">Стоимость объекта: <span>160 000 000 руб.</span></div>
+                                    <div class="object-info-item">Цена за кв. метр: <span>247 488 руб.</span></div>
+                                    <div class="object-info-item">Срок окупаемости объекта: <span>7,8 лет</span></div>
+                                    <div class="object-info-item">Доходность: <span>33,4%</span></div>
+                                    <div class="object-info-item">Мин. инвестиции: <span>300 000 руб.</span></div>
+                                </div>
+                                <div class="object-invest-progress">
+                                    <div class="progress-bar" style="width:27%"></div>
+                                </div>
+                                <div class="object-invest-info">
+                                    <div class="object-invest-info-item">Инвестировано <span>203 605 руб.</span></div>
+                                    <div class="object-invest-info-item">Необходимая сумма <span>308 400 руб.</span>
+                                    </div>
+                                    <div class="object-invest-info-item">Прогресс <span>27%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-block">
+                            <div class="content-block__title">Скачать полный каталог<br> с подробным описанием объектов
+                            </div>
+                            <div class="catalog-block__left">
+                                <img src="img/catalog.png" alt="" />
+                            </div>
+                            <div class="catalog-block__right">
+                                <div class="catalog-block__description">Укажите свои контактные данные для мгновенного
+                                    скачивания полного каталога объектов недвижимости</div>
+                                <form method="" action="" class="catalog-download">
+                                    <input type="text" name="name" id="name1" placeholder="Имя">
+                                    <input type="tel" name="tel" id="phone1" placeholder="Телефон" required>
+                                    <input type="email" name="email" id="email1" placeholder="E-mail" required>
+                                    <label class="c-check">
+                                        <input type="checkbox" name="polit" value="chchhc" checked="checked">
+                                        <span class="c-check__label">
+                                            <span class="check"></span>
+                                            <span class="check-agreement">Я согласен на обработку персональных
+                                                данных</span>
+                                        </span>
+                                    </label>
+                                    <button type="submit" class="b-btn">Скачать каталог</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="calc">
+            <div class="container">
+                <div class="row">
+                    <div class="content-block">
+                        <div class="content-block__title">Рассчитайте ваш будущий доход</div>
+                        <div class="content-block__description">Инвестировать в коммерческую недвижимость гораздо
+                            выгоднее, чем покупать квартиру и сдавать ее в аренду или же размещать денежные средства на
+                            депозите в банке</div>
+                        <div class="calc-block">
+                            <div class="calc-block__left">
+                                <div class="calc-question">
+                                    <div class="calc-question__title">Какую сумму Вы хотите инвестировать?</div>
+                                    <div class="calc-question__bar">
+                                        <div class="calc-question__bar_inner">
+                                            <span>Сумма инвестиций</span>
+                                            <div class="slide">
+                                                <div id="polzunok1"></div>
+                                            </div>
+                                            <div class="slide-value">
+                                                <p id="result-polzunok1"></p><span>руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="values-block invest">
+                                            <span>300 тыс.</span>
+                                            <span>10 млн</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc-question">
+                                    <div class="calc-question__title">В течение скольких лет?</div>
+                                    <div class="calc-question__bar">
+                                        <div class="calc-question__bar_inner">
+                                            <span>Горизонт инвестирования</span>
+                                            <div class="slide">
+                                                <div id="polzunok2"></div>
+                                            </div>
+                                            <div class="slide-value">
+                                                <p id="result-polzunok2"></p><span>лет</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc-block__right">
+                                <div class="calc-result">
+                                    <div class="calc-result__title">Ваш доход составит</div>
+                                    <div class="main-sum"><span id="globalValue">333 000</span> <img
+                                            src="img/rub-gradiented.svg" width="38" height="42"><sup
+                                            id="globalCoef">+11.00%</sup></div>
+                                    <div class="other-sum-block">
+                                        <div class="other-sum-block__title">Рентный доход</div>
+                                        <div class="other-sum-block__value"><span id="rentValue">33 000</span> <svg
+                                                class="bem-symbol" width="25" height="28">
+                                                <use xlink:href="#rub"></use>
+                                            </svg><sup id="rentPercent">+11.00%</sup></div>
+                                    </div>
+                                    <div class="other-sum-block">
+                                        <div class="other-sum-block__title">Прирост стоимости</div>
+                                        <div class="other-sum-block__value"><span id="coefValue">0</span> <svg
+                                                class="bem-symbol" width="25" height="28">
+                                                <use xlink:href="#rub"></use>
+                                            </svg><sup id="coefPercent">+0.00%</sup></div>
+                                    </div>
+                                    <div class="other-sum-block">
+                                        <div class="other-sum-block__title">Стоимость актива</div>
+                                        <div class="other-sum-block__value"><span id='costActive'>300 000</span> <svg
+                                                class="bem-symbol" width="25" height="28">
+                                                <use xlink:href="#rub"></use>
+                                            </svg><sup></sup></div>
+                                    </div>
+                                    <a href="#modal_callback2" class="b-btn popup">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="content-block">
+                        <div class="content-block__title">Преимущества инвестирования с нами</div>
+                        <div class="advantages-block">
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant1.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Недвижимость высочайшего качества</div>
+                                <div class="advantages-item__text">Наша команда экспертов по недвижимости принимает
+                                    решение о приобретении недвижимости исходя из анализа множества критериев, что
+                                    позволяет исключить риск неудачной покупки</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant2.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Низкие риски</div>
+                                <div class="advantages-item__text">Коллективные инвестиции предполагают, что Вы владеете
+                                    недвижимостью совместно с другими инвесторами. Как следствие, риски снижаются по
+                                    сравнению с вариантом, если бы Вы были владельцем всего объекта недвижимости</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant3.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Страхование</div>
+                                <div class="advantages-item__text">Каждый объект застрахован от возможных рисков
+                                    физического или иного ущерба. В случае, если недвижимость пострадает, Вы получите
+                                    компенсацию равную сумме Ваших инвестиций</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant4.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Доступность</div>
+                                <div class="advantages-item__text">Мы снижаем порог входа и делаем коммерческую
+                                    недвижимость доступной для людей, имеющих капитал от нескольких сотен тысяч рублей
+                                </div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant5.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Простота</div>
+                                <div class="advantages-item__text">Мы предлагаем Вам получать пассивный ежемесячный
+                                    доход без лишних хлопот и головной боли, не обладая при этом профессиональными
+                                    знаниями и опытом в области недвижимости</div>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__image">
+                                    <img src="img/advant6.png" alt="" />
+                                </div>
+                                <div class="advantages-item__title">Удобство</div>
+                                <div class="advantages-item__text">Отслеживайте данные о своих доходах и получайте
+                                    регулярную отчётность о состоянии объекта онлайн</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="content-block">
+                        <div class="content-block__title">О нас</div>
+                        <div class="about-block">
+                            <div class="about-block__left">
+                                <div class="about-block__image">
+                                    <img src="img/about-pic.png" alt="" />
+                                </div>
+                                <div class="about-block__text">
+                                    <span class="name">Азамат Жуматаев</span>
+                                    <span class="position">Основатель и генеральный директор</span>
+                                </div>
+                            </div>
+                            <div class="about-block__right">
+                                <div class="about-block__quote">
+                                    <div class="quote-block">
+                                        <blockquote>
+                                            <p><span>Идея основания Вместе Инвест пришла ко мне, когда я работал в
+                                                    госкомпании ДОМ.РФ (занимается развитием жилищной сферы
+                                                    России).</span></p>
+                                            <p><span>ДОМ.РФ реализует масштабную программу развития рынка арендного
+                                                    жилья с привлечением частных коллективных инвестиций через ЗПИФ.
+                                                    Данная программа стала первым в России кейсом применения широко
+                                                    распространённого в мире механизма REIT (Real Estate Investment
+                                                    Trust, инвестиционный фонд недвижимости).</span></p>
+                                            <p><span>Изучив REIT, я пришёл к выводу, что коммерческая недвижимость в
+                                                    России на сегодняшний день является неохваченным, но крайне
+                                                    привлекательным сегментом для коллективных инвестиций. Я убеждён,
+                                                    что REIT позволит сделать рынок коммерческой недвижимости более
+                                                    доступным источником долгосрочного пассивного дохода для людей в
+                                                    России, желающих сохранить и преумножить свой капитал.</span></p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-block__title">Команда Вместе Инвест</div>
+                        <div class="content-block__description">Наша команда состоит из профессионалов в сфере
+                            недвижимости и инвестиций с опытом работы в ведущих российских девелоперских компаниях, а
+                            также в лидирующих международных консалтинговых фирмах.</div>
+                        <div class="team-block">
+                            <div class="team-block-item"><img src="img/logo_inteco-colored.jpg" al="" /></div>
+                            <div class="team-block-item"><img src="img/wakefield_logo-colored.jpg" alt="" /></div>
+                            <div class="team-block-item"><img src="img/CBRE_logo-colored.jpg" alt="" /></div>
+                        </div>
+                        <div class="content-block__title">Наши партнеры</div>
+                        <div class="parnters-block">
+                            <div class="parnters-block-item">
+                                <span>Специальный депозитарий</span>
+                                <img src="img/cocacola-colored.jpg" alt="" />
+                            </div>
+                            <div class="parnters-block-item">
+                                <span>Управляющая компания</span>
+                                <img src="img/heniken-colored.jpg" alt="" />
+                            </div>
+                            <div class="parnters-block-item">
+                                <span>Оценщик</span>
+                                <img src="img/tanks-colored.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="map-contaiter">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A346fd8fc4a4c315a3e1b8f2bca1f4e715d0af56e699ab381672cb8387d949b40&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="map-block-info">
+                        <div class="map-block-info__title">Контакты</div>
+                        <ul>
+                            <li><span class="semibold">Адрес:</span> Россия, Москва, Пресненская наб. 12</li>
+                            <li><span class="semibold">Телефон:</span> <a href="tel:+71951505161">+7 (195)
+                                    150-51-61</a><span class="light">Звонок по России бесплатный</span></li>
+                            <li><span class="semibold">E-mail:</span> <a href="mailto:">test@test.com</a></li>
+                            <li><span class="semibold">Время работы:</span> пн-пт: 9:00-18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="content-block">
+                    <div class="content-block__title">Инвестируйте в коммерческую недвижимость уже сегодня</div>
+                    <div class="content-block__description"><a href="#modal_callback3"
+                            class="b-btn popup">Инвестировать</a></div>
+                    <div class="footer-text">
+                        <p>Приобретение инвестиционных паев Фонда осуществляется в соответствии с Федеральным законом
+                            от 29 ноября 2001 года № 156-ФЗ «Об инвестиционных фондах», каждый пай удостоверяет право
+                            его владельца на долю в имуществе, составляющем
+                            Фонд.
+                        </p>
+                        <p>Стоимость объектов вложения средств и, соответственно, расчетная стоимость инвестиционного
+                            пая могут увеличиваться и уменьшаться, результаты инвестирования в прошлом не определяют
+                            доходы в будущем</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">&copy; 2019 ООО “Вместе Инвест”. Все права защищены.</div>
+                    <div class="developed">Разработка сайта: <a href="https://bydesign.by/" target="_black">“Студия
+                            ЯР”</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="hidden">
+        <div id="modal_callback1" class="callback-form">
+            <div class="callback-form-title">Оставьте заявку</div>
+            <div class="callback-form-description">и станьте совладельцем высокодоходного объекта недвижимости</div>
+            <div class="callback-form-fields">
+                <form post="" action="">
+                    <input type="text" name="name" id="name2" placeholder="Имя">
+                    <input type="tel" name="tel" id="phone2" placeholder="Телефон" required>
+                    <input type="email" name="email" id="email2" placeholder="E-mail" required>
+                    <button type="submit" class="b-btn">Отправить</button>
+                </form>
+            </div>
+            <div class="callback-form-close popup-close"></div>
+        </div>
+        <div id="modal_callback2" class="callback-form">
+            <div class="callback-form-title">Оставьте заявку</div>
+            <div class="callback-form-description">и начните получать пассивный доход уже со следующего месяца</div>
+            <div class="callback-form-fields">
+                <form post="" action="">
+                    <input type="text" name="name" id="name3" placeholder="Имя">
+                    <input type="tel" name="tel" id="phone3" placeholder="Телефон" required>
+                    <input type="email" name="email" id="email3" placeholder="E-mail" required>
+                    <button type="submit" class="b-btn">Отправить</button>
+                </form>
+            </div>
+            <div class="callback-form-close popup-close"></div>
+        </div>
+        <div id="modal_callback3" class="callback-form">
+            <div class="callback-form-title">Оставьте заявку</div>
+            <div class="callback-form-description">и мы перезвоним вам в течение 1 минуты</div>
+            <div class="callback-form-fields">
+                <form post="" action="">
+                    <input type="text" name="name" id="name4" placeholder="Имя">
+                    <input type="tel" name="tel" id="phone4" placeholder="Телефон" required>
+                    <input type="email" name="email" id="email4" placeholder="E-mail" required>
+                    <button type="submit" class="b-btn">Отправить</button>
+                </form>
+            </div>
+            <div class="callback-form-close popup-close"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
